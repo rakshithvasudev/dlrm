@@ -971,7 +971,7 @@ if __name__ == "__main__":
     mlperf_logger.log_event(key='sgd_opt_learning_rate_decay_steps', value=args.lr_num_decay_steps)
     mlperf_logger.log_event(key='sgd_opt_learning_rate_decay_poly_power', value=2)
 
-    with torch.autograd.profiler.profile(args.enable_profiling, use_gpu) as prof:
+    with torch.autograd.profiler.profile(args.enable_profiling, use_cuda=use_gpu) as prof:
         while k < args.nepochs:
             mlperf_logger.barrier()
             mlperf_logger.log_start(key=mlperf_logger.constants.BLOCK_START,

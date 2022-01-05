@@ -123,6 +123,8 @@ Implementation
 
        dlrm_s_criteo_kaggle.sh, dlrm_s_criteo_terabyte.sh, dlrm_s_benchmark.sh
 
+More can be seen here:
+
 Related Work:
 
 On the [Glow framework](https://github.com/pytorch/glow) implementation

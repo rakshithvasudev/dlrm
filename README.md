@@ -11,6 +11,9 @@ embedding tables, which consist of vectors of floating point values.
 The selected vectors are passed to mlp networks denoted by triangles,
 in some cases the vectors are interacted through operators (Ops).
 ```
+This is the architecture: 
+
+
 output:
                     probability of a click
 model:                        |
